@@ -1,4 +1,4 @@
-package garage_api_trigger
+package iot_command_handler
 
 import (
 	"net/http"
