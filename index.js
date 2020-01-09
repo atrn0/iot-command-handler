@@ -11,13 +11,18 @@ const handleCommand = async (req, res) => {
     res.status(204).send('')
   } else if (req.get('content-type') === 'application/json') {
     try {
-      await sendCommand(JSON.stringify(req.body))
+      const body = req.body
+      if (body.token !== process.env.CLOUD_FUNC_TOKEN) {
+        res.status(401).json({ message: 'Your token is invalid' })
+        return
+      }
+      await sendCommand(JSON.stringify(body.cmd))
       res.status(204).send('')
     } catch (e) {
-      res.status(500).json('failed to stringify JSON')
+      res.status(500).json({ message: 'failed to stringify JSON' })
     }
   } else {
-    res.status(400).json('Bad Request')
+    res.status(400).json({ message: 'Bad Request' })
   }
 }
 
