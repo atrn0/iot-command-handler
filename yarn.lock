@@ -18,10 +18,10 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@google-cloud/iot@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@google-cloud/iot/-/iot-1.6.0.tgz#b4e45ec1968afb0dd481794601357e618b97ef27"
-  integrity sha512-xzSRC3+784qBYhVXecNp+pDxpG9qX/HQvfJXNWRE13mIH7ziWAWZHENHsHXW+k7q0SncyukNvPCKJkpGuXVf3g==
+"@google-cloud/iot@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@google-cloud/iot/-/iot-1.8.0.tgz#c0551bbeb16733ff7c2f5ada82d60044038e8390"
+  integrity sha512-MUCagJsd12Tbo9Ly7yWt7He3ys4f4nrNhqj80gqNaSaicbEr68N0cYBW5DkkXgRXCM/jqkmfB0X683cj9t2kEw==
   dependencies:
     google-gax "^1.9.0"
 
