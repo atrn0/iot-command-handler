@@ -12,6 +12,6 @@
     "prettier": "^2.0.4"
   },
   "dependencies": {
-    "@google-cloud/iot": "^1.6.0"
+    "@google-cloud/iot": "^2.0.1"
   }
 }
